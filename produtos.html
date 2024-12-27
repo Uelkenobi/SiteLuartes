@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Luartes</title>
+    <!-- Fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Arquivo CSS externo -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!-- Arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Cabeçalho com logo e navegação -->
+    <header>
+        <div class="logo">Luartes</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Título da página -->
+    <h1 class="hero">Nossos Produtos</h1>
+
+    <!-- Seção de produtos -->
+    <section class="products">
+        <!-- Cartão do Produto 1 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Produto 1" onclick="openModal('https://via.placeholder.com/300', ['https://via.placeholder.com/300', 'https://via.placeholder.com/301', 'https://via.placeholder.com/302'])">
+            <h3>Produto 1</h3>
+            <p>Descrição breve do produto 1.</p>
+            <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto%201" class="button">Comprar</a>
+        </div>
+        <!-- Cartão do Produto 2 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Produto 2" onclick="openModal('https://via.placeholder.com/300', ['https://via.placeholder.com/300', 'https://via.placeholder.com/301', 'https://via.placeholder.com/302'])">
+            <h3>Produto 2</h3>
+            <p>Descrição breve do produto 2.</p>
+            <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto%202" class="button">Comprar</a>
+        </div>
+        <!-- Cartão do Produto 3 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Produto 3" onclick="openModal('https://via.placeholder.com/300', ['https://via.placeholder.com/300', 'https://via.placeholder.com/301', 'https://via.placeholder.com/302'])">
+            <h3>Produto 3</h3>
+            <p>Descrição breve do produto 3.</p>
+            <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto%203" class="button">Comprar</a>
+        </div>
+        <!-- Cartão do Produto 4 -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Produto 4" onclick="openModal('https://via.placeholder.com/300', ['https://via.placeholder.com/300', 'https://via.placeholder.com/301', 'https://via.placeholder.com/302'])">
+            <h3>Produto 4</h3>
+            <p>Descrição breve do produto 4.</p>
+            <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto%204" class="button">Comprar</a>
+        </div> 
+    </section>
+
+    <!-- Rodapé com informações e links para redes sociais -->
+    <footer>
+        <p>2024 Luartes.</p>
+        <ul class="social-media">
+            <li>
+                <a href="https://wa.me/554199745017" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/marketplace/item/1820401535374794" target="_blank">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Modal para exibição de imagens dos produtos -->
+    <div id="productModal" class="modal">
+        <!-- Botão para fechar o modal -->
+        <span class="close" onclick="closeModal()">&times;</span>
+        <!-- Imagem do produto no modal -->
+        <img class="modal-content" id="modalImage">
+        <!-- Botões de navegação do modal -->
+        <div class="navigation">
+            <button id="prev" onclick="navigateGallery(-1)">&#10094;</button>
+            <button id="next" onclick="navigateGallery(1)">&#10095;</button>
+        </div>
+    </div>
+
+</body>
+</html>

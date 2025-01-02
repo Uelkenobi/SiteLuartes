@@ -18,13 +18,14 @@
     
     <!-- Script externo -->
     <script src="script.js"></script>
-</head>
-
-<body>
     <!-- Cabeçalho com logo e navegação -->
     <header>
-        <div class="logo">Luartes</div>
-        <nav>
+        <div class="logo">
+            <video class="video-logo" autoplay loop muted>
+                <source  src="Luartes.mp4" type="video/mp4">
+            </video>
+        </div>
+        <nav class="Home">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
@@ -34,6 +35,10 @@
         </nav>
     </header>
 
+</head>
+
+<body>
+   
     <!-- Seção principal com boas-vindas -->
     <section class="hero">
         <h1>Bem-vindo à Luartes</h1>
@@ -98,5 +103,7 @@
             <button id="next" onclick="navigateGallery(1)">&#10095;</button>
         </div>
     </div>
+
+
 </body>
 </html>

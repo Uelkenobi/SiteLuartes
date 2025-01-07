@@ -8,24 +8,22 @@
 /* Estilo geral do corpo */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f5f5f5;
+  background-image: url("imagens/Fundo.png");
   color: #333;
+  margin: 0;
+  min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da tela */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Cabeçalho com logo e navegação */
 header {
   background-image: #fff;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #444;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; 
 }
 
 nav ul {
@@ -188,8 +186,9 @@ footer {
   text-align: center;
   padding: 1rem;
   background-color: #f0f0f0;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
+  margin-top: auto;
 }
 
 footer p {
@@ -213,6 +212,11 @@ footer p {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #888;
 }
 
 .social-media i {
@@ -237,6 +241,27 @@ footer p {
 .button:hover {
   transform: scale(1.1);
 }
+
+.buttonW {
+  background-color: #fff;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+.buttonW:hover {
+  transform: scale(1.1);
+}
+
 
 /* Modal */
 .modal {
@@ -311,14 +336,22 @@ video-container {
   z-index: -1; /* Faz o vídeo ficar em segundo plano */
 }
 
-.video-logo {
+.logo {
   width: 30%;
   display: block;
   border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  animation: girar 3s ease-in-out; /* Animação de girar */
 }
 
-body {
-  background-image: url("fundo.png");
- 
+  @keyframes girar {
+    50% {
+      transform: rotate(360deg); /* Posição inicial */
+      }
+    }
+    
+.contact p{
+  text-align: center;
 }
 

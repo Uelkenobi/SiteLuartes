@@ -18,19 +18,19 @@
     
     <!-- Script externo -->
     <script src="script.js"></script>
-    <!-- Cabeçalho com logo e navegação -->
+    <!-- Cabeçalho com logo e navegação autoplay loop muted -->
     <header>
-        <div class="logo">
-            <video class="video-logo" autoplay loop muted>
-                <source  src="Luartes.mp4" type="video/mp4">
-            </video>
+        <div>           
+            <img class="logo" src="https://i.ibb.co/XscxzhD/logo.jpg" alt="logo" border="0">        
         </div>
+    </header>
+    <header>
         <nav class="Home">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a class="buttonW" href="index.html">Home</a></li>
+                <li><a class="buttonW" href="produtos.html">Produtos</a></li>
+                <li><a class="buttonW" href="sobre.html">Sobre</a></li>
+                <li><a class="buttonW" href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -49,24 +49,25 @@
     <section class="products">
         <!-- Cartão do Produto 1 -->
         <div class="product-card">
-            <img src="https://via.placeholder.com/300" alt="Produto 1" onclick="openModal('https://via.placeholder.com/300', ['https://via.placeholder.com/300', 'https://via.placeholder.com/301', 'https://via.placeholder.com/302'])">
-            <h3>Produto 1</h3>
+            <img src="https://i.ibb.co/C7qZdV1/y0.jpg" alt="produto 1" onclick="openModal('https://i.ibb.co/d4Vw3xk/y2.jpg', ['//i.ibb.co/0MZpLjx/y3.jpg', '//i.ibb.co/5F7LDNF/y1.jpg', '//i.ibb.co/d4Vw3xk/y2.jpg'])">
+            <h3>Mestre yoda</h3>
             <p>Descrição do produto.</p>
             <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto%201" class="button">Comprar</a>
         </div>
         
         <!-- Cartão do Produto 2 -->
         <div class="product-card">
-            <img src="https://via.placeholder.com/300" alt="Produto 2" onclick="openModal('https://via.placeholder.com/300', ['https://via.placeholder.com/300', 'https://via.placeholder.com/301', 'https://via.placeholder.com/302'])">
-            <h3>Produto 2</h3>
+            <img src="https://i.ibb.co/Nrt1k2N/pn0.jpg" alt="Produto 2" onclick="openModal('https://i.ibb.co/SmGvHJK/pn2.jpg', ['//i.ibb.co/SmGvHJK/pn2.jpg', '//i.ibb.co/4m7W9fG/pn3.jpg', '//i.ibb.co/qC6jrZf/pn4.jpg'])">
+
+            <h3>Papai Noel</h3>
             <p>Descrição do produto.</p>
             <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto%202" class="button">Comprar</a>
         </div>
         
         <!-- Cartão do Produto 3 -->
         <div class="product-card">
-            <img src="https://via.placeholder.com/300" alt="Produto 3" onclick="openModal('https://via.placeholder.com/300', ['https://via.placeholder.com/300', 'https://via.placeholder.com/301', 'https://via.placeholder.com/302'])">
-            <h3>Produto 3</h3>
+            <img src="https://i.ibb.co/TPr9cH6/u0.jpg" alt="Produto 3" onclick="openModal('https://i.ibb.co/TPr9cH6/u0.jpg', ['https://ibb.co/mBfF0N2', 'https://ibb.co/C6JTyTb', 'https://via.placeholder.com/302'])">
+            <h3>Ursinho Natalino</h3>
             <p>Descrição do produto.</p>
             <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto%203" class="button">Comprar</a>
         </div>
@@ -75,12 +76,14 @@
     <!-- Rodapé com informações e links para redes sociais -->
     <footer>
         <p>2024 Luartes.</p>
+        <p>CNPJ:954 330/0001-82</p>
         <ul class="social-media">
             <li>
                 <a href="https://wa.me/554199745017" target="_blank">
                     <i class="fab fa-whatsapp"></i> WhatsApp
                 </a>
             </li>
+            
             <li>
                 <a href="https://www.facebook.com/marketplace/item/1820401535374794" target="_blank">
                     <i class="fab fa-facebook-f"></i> Facebook

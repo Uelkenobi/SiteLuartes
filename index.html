@@ -18,12 +18,17 @@
     
     <!-- Script externo -->
     <script src="script.js"></script>
-    <!-- Cabeçalho com logo e navegação autoplay loop muted -->
+</head>
+
+<body>
+    <!-- Cabeçalho com logo -->
     <header>
         <div>           
             <img class="logo" src="https://i.ibb.co/XscxzhD/logo.jpg" alt="logo" border="0">        
         </div>
     </header>
+
+    <!-- Menu de navegação -->
     <header>
         <nav class="Home">
             <ul>
@@ -34,11 +39,7 @@
             </ul>
         </nav>
     </header>
-
-</head>
-
-<body>
-   
+    
     <!-- Seção principal com boas-vindas -->
     <section class="hero">
         <h1>Bem-vindo à Luartes</h1>
@@ -49,34 +50,33 @@
     <section class="products">
         <!-- Cartão do Produto 1 -->
         <div class="product-card">
-            <img src="https://i.ibb.co/C7qZdV1/y0.jpg" alt="produto 1" onclick="openModal('https://i.ibb.co/d4Vw3xk/y2.jpg', ['//i.ibb.co/0MZpLjx/y3.jpg', '//i.ibb.co/5F7LDNF/y1.jpg', '//i.ibb.co/d4Vw3xk/y2.jpg'])">
-            <h3>Mestre yoda</h3>
-            <p>Descrição do produto.</p>
-            <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto%201" class="button">Comprar</a>
+            <img src="https://i.ibb.co/C7qZdV1/y0.jpg" alt="produto 1" onclick="openModal('https://i.ibb.co/C7qZdV1/y0.jpg', ['//i.ibb.co/0MZpLjx/y3.jpg', '//i.ibb.co/5F7LDNF/y1.jpg', '//i.ibb.co/d4Vw3xk/y2.jpg'])">
+            <h3>Mestre Yoda</h3>
+            <p>Para os fãs de Star Wars, esta estátua do Mestre Yoda é imperdível! Feita à mão em gesso, com um acabamento detalhado e uma base de EVA para evitar riscos nos móveis, esta peça é tanto uma obra de arte quanto um item de coleção. Traga a sabedoria do mestre para sua casa!</p>
+            <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto:%20Mestre%20Yoda" class="button">Comprar</a>
         </div>
         
         <!-- Cartão do Produto 2 -->
         <div class="product-card">
-            <img src="https://i.ibb.co/Nrt1k2N/pn0.jpg" alt="Produto 2" onclick="openModal('https://i.ibb.co/SmGvHJK/pn2.jpg', ['//i.ibb.co/SmGvHJK/pn2.jpg', '//i.ibb.co/4m7W9fG/pn3.jpg', '//i.ibb.co/qC6jrZf/pn4.jpg'])">
-
+            <img src="https://i.ibb.co/Nrt1k2N/pn0.jpg" alt="Produto 2" onclick="openModal('https://i.ibb.co/Nrt1k2N/pn0.jpg', ['//i.ibb.co/SmGvHJK/pn2.jpg', '//i.ibb.co/4m7W9fG/pn3.jpg', '//i.ibb.co/qC6jrZf/pn4.jpg'])">
             <h3>Papai Noel</h3>
-            <p>Descrição do produto.</p>
-            <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto%202" class="button">Comprar</a>
+            <p>Celebre o espírito natalino com esta estátua do Papai Noel, feita à mão em gesso. Com detalhes incríveis e uma pintura vibrante, esta peça é uma bela adição à sua decoração de Natal, trazendo alegria e charme para qualquer espaço.</p>
+            <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto:%20Papai%20Noel" class="button">Comprar</a>
         </div>
         
         <!-- Cartão do Produto 3 -->
         <div class="product-card">
-            <img src="https://i.ibb.co/TPr9cH6/u0.jpg" alt="Produto 3" onclick="openModal('https://i.ibb.co/TPr9cH6/u0.jpg', ['https://ibb.co/mBfF0N2', 'https://ibb.co/C6JTyTb', 'https://via.placeholder.com/302'])">
+            <img src="https://i.ibb.co/TPr9cH6/u0.jpg" alt="Produto 3" onclick="openModal('https://i.ibb.co/TPr9cH6/u0.jpg', ['https://i.ibb.co/dc8JtmV/u1.jpg', 'https://i.ibb.co/VQ0HvDV/u3.jpg', 'https://i.ibb.co/P9yCvSZ/u4.jpg'])">
             <h3>Ursinho Natalino</h3>
-            <p>Descrição do produto.</p>
-            <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto%203" class="button">Comprar</a>
+            <p>Deixe o Natal ainda mais especial com este adorável porta treco em forma de ursinho de Natal. Feito à mão em cerâmica e com a capacidade de abrir ao meio, ele é perfeito para guardar pequenos itens. Cada detalhe é pintado à mão, tornando cada peça única!</p>
+            <a href="https://wa.me/554199745017?text=Eu%20quero%20o%20Produto:%20Ursinho%20Natalino" class="button">Comprar</a>
         </div>
     </section>
 
     <!-- Rodapé com informações e links para redes sociais -->
     <footer>
         <p>2024 Luartes.</p>
-        <p>CNPJ:954 330/0001-82</p>
+        <p>CNPJ: 954 330/0001-82</p>
         <ul class="social-media">
             <li>
                 <a href="https://wa.me/554199745017" target="_blank">
@@ -106,7 +106,5 @@
             <button id="next" onclick="navigateGallery(1)">&#10095;</button>
         </div>
     </div>
-
-
 </body>
 </html>

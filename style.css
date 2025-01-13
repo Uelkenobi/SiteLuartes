@@ -1,3 +1,4 @@
+/* ----------------------- Reset ----------------------- */
 /* Reseta margens, espaçamentos e aplica box-sizing para todos os elementos */
 * {
   margin: 0;
@@ -5,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* ----------------------- Estilos Gerais ----------------------- */
 /* Estilo geral do corpo */
 body {
   font-family: 'Roboto', sans-serif;
@@ -16,34 +18,34 @@ body {
   flex-direction: column;
 }
 
+/* ----------------------- Cabeçalho ----------------------- */
 /* Cabeçalho com logo e navegação */
 header {
-  background-image: #fff;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
-  justify-content: center; /* Center the items horizontally */
-  align-items: center; 
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center;
 }
 
 nav ul {
-  list-style: none;
+  list-style: none; /* Remove marcadores */
   display: flex;
-  gap: 1.5rem;
+  gap: 1.5rem; /* Espaçamento entre os itens */
 }
 
 nav a {
   text-decoration: none;
   color: #444;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s; /* Efeito suave ao passar o mouse */
 }
 
 nav a:hover {
   color: #888;
 }
 
-/* Seção hero */
+/* ----------------------- Seção Hero ----------------------- */
+/* Título e introdução principal */
 .hero {
   text-align: center;
   padding: 3rem 2rem;
@@ -61,31 +63,36 @@ nav a:hover {
   color: #666;
 }
 
-/* Grid de produtos */
+/* ----------------------- Produtos ----------------------- */
+/* Grade de produtos */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Layout responsivo */
   gap: 2rem;
   padding: 2rem;
 }
 
+/* Estilização dos cartões de produto */
 .product-card {
+  display: flex;
+  flex-direction: column; /* Organiza os itens verticalmente */
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
+  height: 100%; /* Ocupa toda a altura disponível */
 }
 
 .product-card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
   transition: transform 0.3s ease;
 }
 
 .product-card img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
 }
 
 .product-card h3 {
@@ -97,8 +104,14 @@ nav a:hover {
   font-size: 1rem;
   color: #666;
   margin-bottom: 1rem;
+  flex-grow: 1; /* Expande para ocupar espaço disponível */
 }
 
+.product-card a {
+  margin: 10px auto;
+}
+
+/* Botão nos cartões de produtos */
 .product-card button {
   background-color: #444;
   color: #fff;
@@ -108,13 +121,16 @@ nav a:hover {
   cursor: pointer;
   margin-bottom: 1rem;
   transition: background-color 0.3s;
+  text-align: center;
+  text-decoration: none;
 }
 
 .product-card button:hover {
-  background-color: #666;
+  background-color: #666; /* Altera a cor ao passar o mouse */
 }
 
-/* Seção sobre */
+/* ----------------------- Seção Sobre e Contato ----------------------- */
+/* Estilização geral das seções "Sobre" e "Contato" */
 .about, .contact {
   max-width: 800px;
   margin: 2rem auto;
@@ -138,11 +154,12 @@ nav a:hover {
   text-align: justify;
 }
 
-/* Formulário de contato */
+/* ----------------------- Formulário de Contato ----------------------- */
+/* Estilização do formulário de contato */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1rem; /* Espaçamento entre os campos */
 }
 
 .contact-form label {
@@ -162,7 +179,7 @@ nav a:hover {
 }
 
 .contact-form textarea {
-  resize: none;
+  resize: none; /* Impede o redimensionamento */
   height: 150px;
 }
 
@@ -178,17 +195,17 @@ nav a:hover {
 }
 
 .contact-form button:hover {
-  background-color: #666;
+  background-color: #666; /* Altera a cor ao passar o mouse */
 }
 
-/* Rodapé */
+/* ----------------------- Rodapé ----------------------- */
+/* Estilização do rodapé */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #f0f0f0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
-  margin-top: auto;
+  margin-top: auto; /* Garante que o rodapé fique na parte inferior */
 }
 
 footer p {
@@ -196,6 +213,7 @@ footer p {
   color: #888;
 }
 
+/* Estilização das redes sociais */
 .social-media {
   list-style: none;
   padding: 0;
@@ -223,7 +241,8 @@ footer p {
   margin-right: 5px;
 }
 
-/* Botão reutilizável */
+/* ----------------------- Botões Reutilizáveis ----------------------- */
+/* Botão padrão */
 .button {
   background-color: #444;
   color: white;
@@ -232,16 +251,16 @@ footer p {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .button:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
 }
 
+/* Botão com fundo branco */
 .buttonW {
   background-color: #fff;
   color: black;
@@ -250,20 +269,18 @@ footer p {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
 }
 
 .buttonW:hover {
   transform: scale(1.1);
 }
 
-
-/* Modal */
+/* ----------------------- Modal ----------------------- */
+/* Estilização do modal de imagens */
 .modal {
   display: none;
   position: fixed;
@@ -274,7 +291,7 @@ footer p {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
 }
 
 .modal .close {
@@ -292,9 +309,10 @@ footer p {
   display: block;
   width: 80%;
   max-width: 700px;
-  animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s; /* Animação ao exibir */
 }
 
+/* Botões de navegação no modal */
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -327,31 +345,10 @@ footer p {
   }
 }
 
-video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Faz o vídeo ficar em segundo plano */
-}
-
+/* ----------------------- Logo ----------------------- */
+/* Estilização do logo */
 .logo {
-  width: 30%;
-  display: block;
+  width: 150px;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 150px;
-  animation: girar 3s ease-in-out; /* Animação de girar */
 }
-
-  @keyframes girar {
-    50% {
-      transform: rotate(360deg); /* Posição inicial */
-      }
-    }
-    
-.contact p{
-  text-align: center;
-}
-

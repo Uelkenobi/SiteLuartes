@@ -352,3 +352,82 @@ footer p {
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* ----------------------- Responsividade ----------------------- */
+
+/* Ajustes para telas menores que 768px (tablets e celulares em modo retrato) */
+@media (max-width: 768px) {
+  /* Centraliza os itens no cabeçalho */
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* Ajuste na grade de produtos para ocupar toda a largura */
+  .products {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Ajustes nas seções "Sobre" e "Contato" */
+  .about, .contact {
+    padding: 1.5rem;
+  }
+
+  /* Tamanho dos botões */
+  .button, .buttonW {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  /* Ajuste no rodapé */
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Ajustes para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  /* Reduz o tamanho da fonte nos textos principais */
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  /* Ajusta margens e espaçamentos */
+  header {
+    padding: 1rem;
+  }
+
+  nav ul {
+    gap: 0.8rem;
+  }
+
+  /* Ajustes em botões */
+  .button, .buttonW {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  /* Ajuste de texto no rodapé */
+  footer p {
+    font-size: 0.7rem;
+  }
+}
